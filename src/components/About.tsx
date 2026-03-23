@@ -30,8 +30,10 @@ const About: React.FC = () => {
       if (!el) return;
       gsap.fromTo(el,
         { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.6, delay, ease: 'power3.out',
-          scrollTrigger: { trigger: el, start: 'top 85%', once: true } }
+        {
+          opacity: 1, y: 0, duration: 0.6, delay, ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+        }
       );
     };
 
@@ -41,8 +43,10 @@ const About: React.FC = () => {
     if (statsRef.current) {
       gsap.fromTo(statsRef.current.children,
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out',
-          scrollTrigger: { trigger: statsRef.current, start: 'top 85%', once: true } }
+        {
+          opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out',
+          scrollTrigger: { trigger: statsRef.current, start: 'top 85%', once: true }
+        }
       );
     }
 
@@ -50,8 +54,10 @@ const About: React.FC = () => {
     if (highlightsRef.current) {
       gsap.fromTo(highlightsRef.current.children,
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out',
-          scrollTrigger: { trigger: highlightsRef.current, start: 'top 85%', once: true } }
+        {
+          opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out',
+          scrollTrigger: { trigger: highlightsRef.current, start: 'top 85%', once: true }
+        }
       );
     }
 
@@ -70,7 +76,7 @@ const About: React.FC = () => {
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.9rem, 3vw, 1.05rem)', maxWidth: '760px', margin: '0 auto', lineHeight: 1.8, textWrap: 'balance' as any }}>
             PRAVESHA 2K26 is a <span style={{ color: 'white', fontWeight: 600 }}>National Level Technical Symposium</span> organized by the
-            <span style={{ color: 'white', fontWeight: 600 }}> Department of CSE, AIDS &amp; IT</span> at VISTAS. 
+            <span style={{ color: 'white', fontWeight: 600 }}> Department of CSE, AIDS &amp; IT</span> at VISTAS.
             Accredited with <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>A++ by NAAC</span>, VELS Institute is proud to host <span style={{ color: 'var(--neon-purple)', fontWeight: 600 }}>500+ participants</span> from colleges across India to compete, collaborate, and celebrate technology.
           </p>
         </div>
@@ -103,7 +109,7 @@ const About: React.FC = () => {
           ))}
         </div>
 
-        {/* Banner */}
+        {/* new Banner */}
         <div ref={bannerRef} className="glass-panel about-info-banner"
           style={{ opacity: 0, marginTop: '3rem', padding: '2rem 2.5rem', borderColor: 'rgba(0,212,255,0.2)', display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center', justifyContent: 'space-between' }}
         >
