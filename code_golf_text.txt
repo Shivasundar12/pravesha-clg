@@ -1,0 +1,36 @@
+CODE GOLF– EVENT RULES
+Major rules 
+Individual participation 
+Any programming language allowed.
+Code length is the primary scoring factor.
+Participants must bring their own laptops for the event. 
+The competition consists of three rounds. 
+Participants must follow the instructions given by the event coordinators.
+Must produce correct output for all test cases
+The decision of the judges/coordinators will be final and binding.
+Round 1 -The Sprint (30 Participants)
+Duration- 20 min 
+Total number of 2 
+Solve 2 simple problems (e.g., Check if a number is a Palindrome or Print the Fibonacci sequence up to N).
+Difficulty level easy (source leet-code)
+The test will be conducted using participants' laptops
+Any form of malpractice may lead to disqualification.
+Participants are ranked primarily on size on code. Secondary on submission time.
+Round 2 -The Character Crunch (10 -15 Participants)
+Duration- 30 min 
+Total number of 2
+Solve 2 intermediate algorithmic problem (e.g., Convert an integer to Roman Numerals or Sort a list without using built-in sort functions).
+Difficulty level Medium (source leet-code)
+The test will be conducted using participants' laptops
+Any form of malpractice may lead to disqualification.
+Scoring is strictly based on Character Count.
+Lower Character is better. Rank wise top 6 to Final round 
+Round 3- The Master Stroke (6 Participants)
+Duration- 40 min 
+Total number of 1
+Solve a complex logic puzzle (e.g., A mini Sudoku solver or A string compression algorithm like Run-Length Encoding).
+Difficulty level High (source leet-code)
+The test will be conducted using participants' laptops
+Any form of malpractice may lead to disqualification.
+Scoring is strictly based on Character Count and Submission time.
+Lower Character is better. Rank wise top 3 will be awarded.

@@ -17,7 +17,7 @@ const studentCoordinators = [
   { name: 'Ananya S' },
   { name: 'Aditya Anabayan B' },
   { name: 'Sakthi Priyadharsan' },
-  { name: 'Bhavana M' },
+  { name: 'Bhavna M' },
   { name: 'Shiva Sundar P' },
   { name: 'Abirutha' },
   { name: 'Mohammed Kabir S' },
@@ -188,8 +188,8 @@ const StudentCard = ({
 
 const Coordinators: React.FC = () => {
   const headerRef = useRef<HTMLDivElement>(null);
-  const card1Ref  = useRef<HTMLDivElement>(null);
-  const card2Ref  = useRef<HTMLDivElement>(null);
+  const card1Ref = useRef<HTMLDivElement>(null);
+  const card2Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     [headerRef, card1Ref, card2Ref].forEach((ref, i) => {
