@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Props {
   color?: string;
@@ -14,6 +14,16 @@ export default function ElectricCursor({
   hideCursor = true,
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(typeof window !== "undefined" && (window.innerWidth <= 768 || window.matchMedia("(pointer: coarse)").matches));
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -40,11 +50,11 @@ export default function ElectricCursor({
     resize();
     window.addEventListener("resize", resize);
 
-    const onMove = (e: MouseEvent) => {
+    const handlePointerMove = (clientX: number, clientY: number) => {
       prevX = mouseX;
       prevY = mouseY;
-      mouseX = e.clientX;
-      mouseY = e.clientY;
+      mouseX = clientX;
+      mouseY = clientY;
 
       const dx = mouseX - prevX;
       const dy = mouseY - prevY;
@@ -80,9 +90,41 @@ export default function ElectricCursor({
         });
       }
     };
-    window.addEventListener("mousemove", onMove);
 
-    if (hideCursor) document.documentElement.style.cursor = "none";
+    const onMouseMove = (e: MouseEvent) => {
+      handlePointerMove(e.clientX, e.clientY);
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        handlePointerMove(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    };
+
+    const onTouchStart = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        mouseX = e.touches[0].clientX;
+        mouseY = e.touches[0].clientY;
+        prevX = mouseX;
+        prevY = mouseY;
+      }
+    };
+
+    // Cleanup touch position so bolts don't snap from last position on next touch
+    const onTouchEnd = () => {
+      mouseX = -999;
+      mouseY = -999;
+      prevX = -999;
+      prevY = -999;
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
+    window.addEventListener("touchstart", onTouchStart, { passive: true });
+    window.addEventListener("touchend", onTouchEnd, { passive: true });
+
+    if (hideCursor && !isMobile) document.documentElement.style.cursor = "none";
+    if (isMobile) document.documentElement.style.cursor = "";
 
     // Stable per-frame seeded random (no flicker between frames)
     const sr = (seed: number, i: number) => {
@@ -135,6 +177,7 @@ export default function ElectricCursor({
     }
 
     function drawCursor(x: number, y: number) {
+      if (isMobile) return;
       if (x < -900) return;
       ctx.save();
       ctx.translate(x, y);
@@ -216,10 +259,13 @@ export default function ElectricCursor({
     return () => {
       cancelAnimationFrame(animId);
       window.removeEventListener("resize", resize);
-      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchstart", onTouchStart);
+      window.removeEventListener("touchend", onTouchEnd);
       document.documentElement.style.cursor = "";
     };
-  }, [color, glowColor, hideCursor]);
+  }, [color, glowColor, hideCursor, isMobile]);
 
   return (
     <canvas
