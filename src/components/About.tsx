@@ -6,17 +6,17 @@ import { MapPin, Trophy, Cpu, GraduationCap, Globe, Award } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { icon: Trophy, value: '10', label: 'Events', color: 'var(--neon-red)' },
+  { icon: Trophy, value: '12', label: 'EVENTS', color: 'var(--neon-red)' },
   { icon: Award, value: 'A++', label: 'NAAC Accredited', color: 'var(--neon-blue)' },
   { icon: Globe, value: '500+', label: 'Participants', color: 'var(--neon-purple)' },
   { icon: GraduationCap, value: '1 Day', label: 'Symposium', color: 'var(--neon-red)' },
 ];
 
 const highlights = [
-  { icon: Cpu, title: 'Technical & Non-Tech', desc: 'Paper Presentation, Project Expo, Coding Challenges, UI Design and more — test your skills across 10 unique events.' },
-  { icon: Trophy, title: '₹1 Lakh+ Prize Pool', desc: 'Win exciting cash prizes worth ₹1 Lakh across all events. Registration fee: ₹100/event.' },
+  { icon: Cpu, title: 'Technical & Non-Tech', desc: <>Paper Presentation, Project Expo, Coding Challenges, UI Design and more — test your skills across <strong style={{color: 'white'}}>12 EVENTS</strong>.</> },
+  { icon: Trophy, title: '80K Cash Prize Pool', desc: 'Win exciting cash prizes worth 80K across all events. Registration fee: ₹100/event.' },
   { icon: MapPin, title: 'Venue', desc: 'VELS Institute of Science, Technology & Advanced Studies (VISTAS). Campuses in Pallavaram, Thalambur, Periyapalayam — Chennai.' },
-  { icon: Globe, title: 'Open to All', desc: 'Open to students from all colleges across India. Last date for online registration is April 05.' },
+  { icon: Globe, title: 'Open to All', desc: <>Open to students from all colleges across India. Last date for online registration is <strong style={{color: 'white'}}>April 7th</strong>.</> },
 ];
 
 const About: React.FC = () => {
@@ -76,8 +76,8 @@ const About: React.FC = () => {
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.9rem, 3vw, 1.05rem)', maxWidth: '760px', margin: '0 auto', lineHeight: 1.8, textWrap: 'balance' as any }}>
             PRAVESHA 2K26 is a <span style={{ color: 'white', fontWeight: 600 }}>National Level Technical Symposium</span> organized by the
-            <span style={{ color: 'white', fontWeight: 600 }}> Department of CSE, AIDS &amp; IT</span> at VISTAS.
-            Accredited with <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>A++ by NAAC</span>, VELS Institute is proud to host <span style={{ color: 'var(--neon-purple)', fontWeight: 600 }}>500+ participants</span> from colleges across India to compete, collaborate, and celebrate technology.
+            <span style={{ color: 'white', fontWeight: 600 }}> Departments of CSE and DS&amp;IT</span> at VISTAS.
+            Hosted by <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>VISTAS</span>, we are proud to welcome <span style={{ color: 'var(--neon-purple)', fontWeight: 600 }}>500+ participants</span> from colleges across India to compete, collaborate, and celebrate technology.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ const About: React.FC = () => {
         >
           <div>
             <div style={{ fontSize: '0.7rem', color: 'var(--neon-blue)', letterSpacing: '3px', marginBottom: '0.4rem' }}>ORGANISED BY</div>
-            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.95rem', marginTop: '0.25rem' }}>Dept. of CSE, AIDS &amp; IT</div>
+            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.95rem', marginTop: '0.25rem' }}>Depts. of CSE and DS&amp;IT</div>
             <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.2rem' }}>Pallavaram, Thalambur, Periyapalayam — Chennai</div>
           </div>
           <div className="about-info-banner-right" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-end', textAlign: 'right' }}>
@@ -123,7 +123,7 @@ const About: React.FC = () => {
               <div className="pulse-dot" />
               <span style={{ fontFamily: 'Orbitron', fontSize: '0.85rem', color: 'var(--neon-red)' }}>APRIL 09, 2026</span>
             </div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Last date for online registration: <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>April 05</span></div>
+            <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Last date for online registration: <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>April 7th</span></div>
             <a href="mailto:pravesha2k26@gmail.com" style={{ fontSize: '0.82rem', color: 'var(--neon-blue)' }}>pravesha2k26@gmail.com</a>
           </div>
         </div>

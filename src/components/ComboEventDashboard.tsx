@@ -87,7 +87,7 @@ const ComboEventDashboard: React.FC = () => {
               </div>
               
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                Experience the best of both worlds! Select exactly <strong style={{ color: 'white' }}>1 Technical Event</strong> and <strong style={{ color: 'white' }}>1 Non-Technical Event</strong> to avail our special combo package pricing.
+                Experience the best of both worlds! Select the <strong style={{ color: 'white' }}>Combo Ticket</strong> to get access to <strong style={{ color: 'white' }}>all events</strong> for a special package price.
               </p>
 
               {/* Pricing Cards */}
@@ -100,7 +100,7 @@ const ComboEventDashboard: React.FC = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.25rem', background: 'rgba(168,85,247,0.1)', border: '1px solid rgba(168,85,247,0.4)', borderRadius: '10px', boxShadow: '0 0 20px rgba(168,85,247,0.15)' }}>
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <span style={{ fontWeight: 600, letterSpacing: '0.5px', color: 'var(--neon-purple)' }}>Combo Event Fee</span>
-                    <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>(1 Tech + 1 Non-Tech)</span>
+                    <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>(All Events)</span>
                   </div>
                   <span style={{ fontFamily: 'Orbitron', fontSize: '1.4rem', fontWeight: 900, color: 'white', textShadow: '0 0 10px rgba(168,85,247,0.8)' }}>₹150</span>
                 </div>
@@ -116,7 +116,7 @@ const ComboEventDashboard: React.FC = () => {
                   <div>
                     <h4 style={{ color: 'white', fontSize: '1.05rem', margin: '0 0 0.5rem 0', letterSpacing: '1px' }}>PAPER PRESENTATION (SPECIAL)</h4>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0, lineHeight: 1.5 }}>
-                      Paper Presentation involves an <strong style={{ color: 'var(--neon-red)' }}>ISBN Certificate</strong> and has a discrete fee of <strong style={{ color: 'white' }}>₹600</strong>. It cannot be combined with the combo offer.
+                      Paper Presentation involves an <strong style={{ color: 'var(--neon-red)' }}>ISBN Certificate</strong> and has a discrete fee of <strong style={{ color: 'white' }}>₹500</strong>. It cannot be combined with the combo offer.
                     </p>
                   </div>
                 </div>

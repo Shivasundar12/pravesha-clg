@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
   --bg-color: #050508;
@@ -10,8 +10,8 @@
   --neon-purple: #a855f7;
   --glass-bg: rgba(8, 8, 12, 1);
   --glass-border: rgba(255, 42, 42, 0.4);
-  font-family: 'Rajdhani', sans-serif;
-  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
   font-weight: 400;
   color: var(--text-primary);
   background-color: var(--bg-color);
@@ -518,7 +518,7 @@ nav.glass-panel { z-index: 100; }
   border-radius: 8px;
   padding: 1rem;
   color: var(--text-primary);
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 0.95rem;
   resize: vertical;
   outline: none;

@@ -6,23 +6,23 @@ import themeImage from '../assets/hero.png';
 import CountdownTimer from './CountdownTimer';
 const Hero: React.FC = () => {
 
-  const tagRef       = useRef<HTMLSpanElement>(null);
-  const h1Ref        = useRef<HTMLHeadingElement>(null);
-  const paraRef      = useRef<HTMLParagraphElement>(null);
-  const chipsRef     = useRef<HTMLDivElement>(null);
+  const tagRef = useRef<HTMLSpanElement>(null);
+  const h1Ref = useRef<HTMLHeadingElement>(null);
+  const paraRef = useRef<HTMLParagraphElement>(null);
+  const chipsRef = useRef<HTMLDivElement>(null);
   const countdownRef = useRef<HTMLDivElement>(null);
-  const ctaRef       = useRef<HTMLDivElement>(null);
-  const chevronRef   = useRef<HTMLDivElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+  const chevronRef = useRef<HTMLDivElement>(null);
 
   // GSAP entrance
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    tl.fromTo(tagRef.current,       { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5 }, 0.2)
-      .fromTo(h1Ref.current,        { opacity: 0, y: 20  }, { opacity: 1, y: 0, duration: 0.6 }, 0.35)
-      .fromTo(paraRef.current,      { opacity: 0         }, { opacity: 1,        duration: 0.5 }, 0.5)
-      .fromTo(chipsRef.current,     { opacity: 0, y: 10  }, { opacity: 1, y: 0, duration: 0.5 }, 0.6)
-      .fromTo(countdownRef.current, { opacity: 0, y: 10  }, { opacity: 1, y: 0, duration: 0.5 }, 0.7)
-      .fromTo(ctaRef.current,       { opacity: 0, y: 10  }, { opacity: 1, y: 0, duration: 0.5 }, 0.8);
+    tl.fromTo(tagRef.current, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5 }, 0.2)
+      .fromTo(h1Ref.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, 0.35)
+      .fromTo(paraRef.current, { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.5)
+      .fromTo(chipsRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 }, 0.6)
+      .fromTo(countdownRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 }, 0.7)
+      .fromTo(ctaRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 }, 0.8);
     gsap.to(chevronRef.current, { y: 8, repeat: -1, yoyo: true, duration: 0.9, ease: 'sine.inOut' });
   }, []);
 
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           <div style={{ maxWidth: '700px' }}>
             <div style={{ marginBottom: '0.75rem' }}>
               <span ref={tagRef} className="section-tag" style={{ opacity: 0 }}>
-                DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING PRESENTS
+                DEPARTMENTS OF CSE AND DS &amp; IT PRESENTS
               </span>
             </div>
 
@@ -83,8 +83,8 @@ const Hero: React.FC = () => {
             {/* Info Chips */}
             <div ref={chipsRef} style={{ opacity: 0, display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1.5rem' }}>
               {[
-                { icon: <Calendar size={18} color="var(--neon-red)" />, label: 'DATE',  value: 'APRIL 09, 2026' },
-                { icon: <Award    size={18} color="var(--neon-blue)"/>, label: 'PRIZE', value: '₹1 LAKH+ CASH PRIZE' },
+                { icon: <Calendar size={18} color="var(--neon-red)" />, label: 'DATE', value: 'APRIL 09, 2026' },
+                { icon: <Award size={18} color="var(--neon-blue)" />, label: 'PRIZE', value: '80K CASH PRIZE' },
               ].map(item => (
                 <div key={item.label} style={{
                   display: 'flex', alignItems: 'center', gap: '0.6rem',

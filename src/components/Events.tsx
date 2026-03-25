@@ -38,7 +38,7 @@ const technicalEvents: Event[] = [
       'Open to individual participants or teams (maximum 3 members).',
       'Topics must relate to Computer Science & Emerging Technologies (AI, Data Science, IoT, Cyber Security, etc.).',
       'The paper must follow IEEE format.',
-      'Last date for submitting the paper: 5th April; PPT must be submitted by 8th April.',
+      'Last date for submitting the paper: 7th April; PPT must be submitted by 8th April.',
       'Each team gets 8 minutes for presentation + 2 minutes for Q&A.',
       'Participants must bring a backup of their PPT on a pen drive.',
       'The paper must be original work; plagiarism must not exceed 25%.',
@@ -256,7 +256,7 @@ const nonTechnicalEvents: Event[] = [
     ],
     judgingCriteria: [
       'Humour & Creativity -- how funny, original, and clever the memes are.',
-      'Relatability -- how well the content connects with CSE students and tech culture.',
+      'Relatability -- how well the content connects with CSE and DS&IT students and tech culture.',
       'Overall Impact -- audience reaction and presentation confidence in Round 2.',
     ],
   },
@@ -535,7 +535,7 @@ const Events: React.FC = () => {
         <div ref={headerRef} style={{ opacity: 0, textAlign: 'center', marginBottom: '4rem' }}>
           <span className="section-tag">WHAT&apos;S IN STORE</span>
           <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', color: 'white', marginBottom: '1.5rem' }}>
-            EVENTS <span style={{ color: 'var(--neon-red)' }}>ARENA</span>
+            <strong style={{color: 'white'}}>12 EVENTS</strong> <span style={{ color: 'var(--neon-red)' }}>ARENA</span>
           </h2>
           <div className="glass-panel fee-banner" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', padding: '1.25rem 2rem', borderColor: 'rgba(0,212,255,0.2)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -544,8 +544,13 @@ const Events: React.FC = () => {
             </div>
             <div className="fee-divider" style={{ width: '1px', background: 'rgba(255,255,255,0.1)', alignSelf: 'stretch' }} />
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span style={{ color: 'var(--neon-purple)', fontSize: '0.9rem' }}>Combo Ticket (All Events):</span>
+              <span style={{ color: 'white', fontWeight: 700, fontFamily: 'Orbitron', fontSize: '0.95rem' }}>&#8377;150</span>
+            </div>
+            <div className="fee-divider" style={{ width: '1px', background: 'rgba(255,255,255,0.1)', alignSelf: 'stretch' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <div className="pulse-dot" style={{ background: 'var(--neon-blue)', boxShadow: '0 0 8px var(--neon-blue)' }} />
-              <span style={{ color: 'var(--neon-blue)', fontWeight: 700, fontFamily: 'Orbitron', fontSize: '0.9rem' }}>Last Date for Registration: APRIL 05</span>
+              <span style={{ color: 'var(--neon-blue)', fontWeight: 700, fontFamily: 'Orbitron', fontSize: '0.9rem' }}>Last Date for Registration: <strong style={{color: 'white'}}>APRIL 7TH</strong></span>
             </div>
           </div>
         </div>
