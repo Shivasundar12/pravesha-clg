@@ -76,7 +76,7 @@ const About: React.FC = () => {
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.9rem, 3vw, 1.05rem)', maxWidth: '760px', margin: '0 auto', lineHeight: 1.8, textWrap: 'balance' as any }}>
             PRAVESHA 2K26 is a <span style={{ color: 'white', fontWeight: 600 }}>National Level Symposium</span> organized by the
-            <span style={{ color: 'white', fontWeight: 600 }}> Department of CSE, DS &amp; IT</span> at VISTAS.
+            <span style={{ color: 'white', fontWeight: 600 }}> Department of CSE, DS &amp; IT</span>
             Hosted by <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>VISTAS</span>, we are proud to welcome <span style={{ color: 'var(--neon-purple)', fontWeight: 600 }}>500+ participants</span> from colleges across India to compete, collaborate, and celebrate technology.
           </p>
         </div>
@@ -115,7 +115,7 @@ const About: React.FC = () => {
         >
           <div>
             <div style={{ fontSize: '0.7rem', color: 'var(--neon-blue)', letterSpacing: '3px', marginBottom: '0.4rem' }}>ORGANISED BY</div>
-            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.95rem', marginTop: '0.25rem' }}>Dept. of CSE, DS &amp; IT</div>
+            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.95rem', marginTop: '0.25rem' }}>Dept of CSE, DS &amp; IT</div>
             <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.2rem' }}>Pallavaram, Chennai</div>
           </div>
           <div className="about-info-banner-right" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-end', textAlign: 'right' }}>

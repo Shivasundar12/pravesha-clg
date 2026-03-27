@@ -63,7 +63,7 @@ const Footer: React.FC = () => (
             PRAVESHA 2K26
           </h2>
           <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.5rem', maxWidth: '320px' }}>
-            National Level Technical Symposium organized by the Department of Computer Science and Engineering, VISTAS.
+            National Level Symposium organized by the Department of CSE, DS &amp; IT.
           </p>
           <a
             href="https://instagram.com/PRAVESHA_2K26"
