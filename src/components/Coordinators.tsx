@@ -14,16 +14,16 @@ const staffCoordinators = [
 ];
 
 const studentCoordinators = [
-  { name: 'Ananya S' },
-  { name: 'Aditya Anabayan B' },
-  { name: 'Sakthi Priyadharsan' },
-  { name: 'Bhavna M' },
-  { name: 'Shiva Sundar P' },
-  { name: 'Abirutha' },
-  { name: 'Mohammed Kabir S' },
-  { name: 'Pooja Manoharan' },
-  { name: 'Yathindra K B' },
-  { name: 'Akshara S' },
+  { name: 'Ananya S', phone: '7356666091' },
+  { name: 'Aditya Anabayan B', phone: '9486055560' },
+  { name: 'Sakthi Priyadharsan', phone: '9345252389' },
+  { name: 'Bhavna M', phone: '7305554098' },
+  { name: 'Shiva Sundar P', phone: '7338711301' },
+  { name: 'Abirutha', phone: '9080186128' },
+  { name: 'Mohammed Kabir S', phone: '9840362703' },
+  { name: 'Pooja Manoharan', phone: '8925259759' },
+  { name: 'Yathindra K B', phone: '8667669019' },
+  { name: 'Akshara S', phone: '9345204369' },
 ];
 
 // Single name chip used in staff list (single column)
@@ -62,7 +62,7 @@ const StaffRow = ({ name, color }: { name: string; color: string }) => (
 );
 
 // Compact name chip used in the two-column student grid
-const StudentChip = ({ name, color }: { name: string; color: string }) => (
+const StudentChip = ({ name, phone, color }: { name: string; phone?: string; color: string }) => (
   <div
     style={{
       display: 'flex',
@@ -84,18 +84,31 @@ const StudentChip = ({ name, color }: { name: string; color: string }) => (
         background: color, boxShadow: `0 0 6px ${color}90`,
       }}
     />
-    <span
-      style={{
-        fontSize: 'clamp(0.78rem, 1.6vw, 0.92rem)',
-        fontWeight: 600,
-        color: 'var(--text-primary)',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        whiteSpace: 'nowrap',
-      }}
-    >
-      {name}
-    </span>
+    <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+      <span
+        style={{
+          fontSize: 'clamp(0.78rem, 1.6vw, 0.92rem)',
+          fontWeight: 600,
+          color: 'var(--text-primary)',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {name}
+      </span>
+      {phone && (
+        <a href={`tel:${phone}`} style={{ 
+          fontSize: '0.75rem', 
+          color: 'var(--text-secondary)',
+          textDecoration: 'none',
+          marginTop: '2px',
+          fontWeight: 500
+        }}>
+          {phone}
+        </a>
+      )}
+    </div>
   </div>
 );
 
@@ -170,17 +183,17 @@ const StudentCard = ({
       <h3 style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', margin: 0, color: 'white', letterSpacing: '0.5px' }}>STUDENT COORDINATORS</h3>
     </div>
 
-    {/* Two-column grid */}
+    {/* Responsive grid */}
     <div
       style={{
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))',
         gap: '0.6rem',
         flex: 1,
       }}
     >
       {studentCoordinators.map(p => (
-        <StudentChip key={p.name} name={p.name} color="var(--neon-blue)" />
+        <StudentChip key={p.name} name={p.name} phone={p.phone} color="var(--neon-blue)" />
       ))}
     </div>
   </div>

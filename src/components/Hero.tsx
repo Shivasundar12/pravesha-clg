@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           <div style={{ maxWidth: '700px' }}>
             <div style={{ marginBottom: '0.75rem' }}>
               <span ref={tagRef} className="section-tag" style={{ opacity: 0 }}>
-                DEPARTMENTS OF CSE AND DS &amp; IT PRESENTS
+                DEPARTMENT OF CSE, DS &amp; IT PRESENTS
               </span>
             </div>
 
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
               paddingLeft: '1.2rem', lineHeight: 1.7, maxWidth: '560px',
             }}>
               Synthesizing Technology, Celebrating Talent.<br />
-              The ultimate engineering technical symposium.
+              The ultimate engineering symposium.
             </p>
 
             {/* Info Chips */}

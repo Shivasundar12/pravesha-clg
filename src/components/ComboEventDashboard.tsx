@@ -116,7 +116,7 @@ const ComboEventDashboard: React.FC = () => {
                   <div>
                     <h4 style={{ color: 'white', fontSize: '1.05rem', margin: '0 0 0.5rem 0', letterSpacing: '1px' }}>PAPER PRESENTATION (SPECIAL)</h4>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0, lineHeight: 1.5 }}>
-                      Paper Presentation involves an <strong style={{ color: 'var(--neon-red)' }}>ISBN Certificate</strong> and has a discrete fee of <strong style={{ color: 'white' }}>₹500</strong>. It cannot be combined with the combo offer.
+                      Accepted papers will be published with an <strong style={{ color: 'var(--neon-red)' }}>ISBN</strong> and has a discrete fee of <strong style={{ color: 'white' }}>₹500</strong>. It cannot be combined with the combo offer.
                     </p>
                   </div>
                 </div>

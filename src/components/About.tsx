@@ -13,9 +13,9 @@ const stats = [
 ];
 
 const highlights = [
-  { icon: Cpu, title: 'Technical & Non-Tech', desc: <>Paper Presentation, Project Expo, Coding Challenges, UI Design and more — test your skills across <strong style={{color: 'white'}}>12 EVENTS</strong>.</> },
+  { icon: Cpu, title: 'Technical & Non-Tech', desc: <>Paper Presentation, Project Expo, Coding Challenges, UI Design and more. Test your skills across <strong style={{color: 'white'}}>12 EVENTS</strong>.</> },
   { icon: Trophy, title: '80K Cash Prize Pool', desc: 'Win exciting cash prizes worth 80K across all events. Registration fee: ₹100/event.' },
-  { icon: MapPin, title: 'Venue', desc: 'VELS Institute of Science, Technology & Advanced Studies (VISTAS). Campuses in Pallavaram, Thalambur, Periyapalayam — Chennai.' },
+  { icon: MapPin, title: 'Venue', desc: 'VELS Institute of Science, Technology & Advanced Studies (VISTAS). Campus in Pallavaram, Chennai.' },
   { icon: Globe, title: 'Open to All', desc: <>Open to students from all colleges across India. Last date for online registration is <strong style={{color: 'white'}}>April 7th</strong>.</> },
 ];
 
@@ -75,8 +75,8 @@ const About: React.FC = () => {
             WHAT IS <span style={{ color: 'var(--neon-red)' }}>PRAVESHA?</span>
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.9rem, 3vw, 1.05rem)', maxWidth: '760px', margin: '0 auto', lineHeight: 1.8, textWrap: 'balance' as any }}>
-            PRAVESHA 2K26 is a <span style={{ color: 'white', fontWeight: 600 }}>National Level Technical Symposium</span> organized by the
-            <span style={{ color: 'white', fontWeight: 600 }}> Departments of CSE and DS&amp;IT</span> at VISTAS.
+            PRAVESHA 2K26 is a <span style={{ color: 'white', fontWeight: 600 }}>National Level Symposium</span> organized by the
+            <span style={{ color: 'white', fontWeight: 600 }}> Department of CSE, DS &amp; IT</span> at VISTAS.
             Hosted by <span style={{ color: 'var(--neon-blue)', fontWeight: 600 }}>VISTAS</span>, we are proud to welcome <span style={{ color: 'var(--neon-purple)', fontWeight: 600 }}>500+ participants</span> from colleges across India to compete, collaborate, and celebrate technology.
           </p>
         </div>
@@ -115,8 +115,8 @@ const About: React.FC = () => {
         >
           <div>
             <div style={{ fontSize: '0.7rem', color: 'var(--neon-blue)', letterSpacing: '3px', marginBottom: '0.4rem' }}>ORGANISED BY</div>
-            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.95rem', marginTop: '0.25rem' }}>Depts. of CSE and DS&amp;IT</div>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.2rem' }}>Pallavaram, Thalambur, Periyapalayam — Chennai</div>
+            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.95rem', marginTop: '0.25rem' }}>Dept. of CSE, DS &amp; IT</div>
+            <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.2rem' }}>Pallavaram, Chennai</div>
           </div>
           <div className="about-info-banner-right" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-end', textAlign: 'right' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
