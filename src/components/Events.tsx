@@ -90,7 +90,7 @@ const technicalEvents: Event[] = [
     desc: 'Showcase your innovative ideas, technical skills, and problem-solving abilities through working models or functional prototypes to a panel of expert judges.',
     teamSize: 'Max 2 members',
     duration: '5 min + 2 min Q&A',
-    venue: 'Pharmacy Block Conference Hall',
+    venue: 'Flemming Block Conference Hall',
     rules: [
       'Each team shall consist of a maximum of two members.',
       'Participants must bring their own laptops and any necessary hardware for project demonstration.',
@@ -556,7 +556,7 @@ const Events: React.FC = () => {
         <div ref={headerRef} style={{ opacity: 0, textAlign: 'center', marginBottom: '4rem' }}>
           <span className="section-tag">WHAT&apos;S IN STORE</span>
           <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', color: 'white', marginBottom: '1.5rem' }}>
-            <strong style={{color: 'white'}}>12 EVENTS</strong> <span style={{ color: 'var(--neon-red)' }}>ARENA</span>
+            <strong style={{ color: 'white' }}>12 EVENTS</strong> <span style={{ color: 'var(--neon-red)' }}>ARENA</span>
           </h2>
           <div className="glass-panel fee-banner" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', padding: '1.25rem 2rem', borderColor: 'rgba(0,212,255,0.2)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -571,7 +571,7 @@ const Events: React.FC = () => {
             <div className="fee-divider" style={{ width: '1px', background: 'rgba(255,255,255,0.1)', alignSelf: 'stretch' }} />
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <div className="pulse-dot" style={{ background: 'var(--neon-blue)', boxShadow: '0 0 8px var(--neon-blue)' }} />
-              <span style={{ color: 'var(--neon-blue)', fontWeight: 700, fontFamily: 'Orbitron', fontSize: '0.9rem' }}>Last Date for Registration: <strong style={{color: 'white'}}>APRIL 7TH</strong></span>
+              <span style={{ color: 'var(--neon-blue)', fontWeight: 700, fontFamily: 'Orbitron', fontSize: '0.9rem' }}>Last Date for Registration: <strong style={{ color: 'white' }}>APRIL 7TH</strong></span>
             </div>
           </div>
         </div>
