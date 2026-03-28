@@ -6,8 +6,10 @@ import {
   MonitorPlay, BrainCog, Presentation, Music,
   ArrowRight, X, CheckCircle2, ExternalLink,
   Mic2, PenTool, Lightbulb, ImageIcon, Cpu, BookOpen, Trophy,
-  Compass, Paintbrush
+  Compass, Paintbrush, Download
 } from 'lucide-react';
+
+import pptxFormat from '../assets/DOC-20260327-WA0011..pptx';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +24,8 @@ type Event = {
   teamSize: string;
   duration: string;
   venue: string;
+  downloadLink?: string;
+  downloadLabel?: string;
 };
 
 const technicalEvents: Event[] = [
@@ -34,6 +38,8 @@ const technicalEvents: Event[] = [
     teamSize: 'Max 3 members',
     duration: '8 min + 2 min Q&A',
     venue: 'Lecture Theatre',
+    downloadLink: pptxFormat,
+    downloadLabel: 'Download Presentation Format (PPTX)',
     rules: [
       'Open to individual participants or teams (maximum 3 members).',
       'Topics must relate to Computer Science & Emerging Technologies (AI, Data Science, IoT, Cyber Security, etc.).',
@@ -41,14 +47,14 @@ const technicalEvents: Event[] = [
       'Last date for submitting the paper: 7th April; PPT must be submitted by 8th April.',
       'Each team gets 8 minutes for presentation + 2 minutes for Q&A.',
       'Participants must bring a backup of their PPT on a pen drive.',
-      'The paper must be original work; plagiarism must not exceed 25%.',
+      'The paper must be original work; plagiarism must not exceed 20%.',
       'The Selected papers will be published with an ISBN.',
       'Participants must report 30 minutes before the event. Judges decision is final and binding.',
     ],
     judgingCriteria: [
       'Innovation & Contribution: relevance to SDGs and novelty of research.',
       'Presentation Skills: clarity, structure, and organization of the PPT.',
-      'Originality: plagiarism within acceptable limits (25% max).',
+      'Originality: plagiarism within acceptable limits (20% max).',
       'Technical Depth: depth of methodology and real-world applicability.',
     ],
   },
@@ -440,6 +446,19 @@ const EventModal = ({ event, onClose }: { event: Event; onClose: () => void }) =
             ))}
           </div>
         </div>
+
+        {/* Download Format button */}
+        {event.downloadLink && event.downloadLabel && (
+          <a
+            href={event.downloadLink}
+            download="Paper_Presentation_Format.pptx"
+            style={{ width: '100%', justifyContent: 'center', display: 'flex', boxSizing: 'border-box', whiteSpace: 'normal', textAlign: 'center', lineHeight: 1.4, background: `${event.color}15`, border: `1px solid ${event.color}50`, color: 'white', padding: '0.8rem', borderRadius: '8px', cursor: 'pointer', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', textDecoration: 'none', fontWeight: 600, transition: 'all 0.2s ease', fontFamily: 'Orbitron, sans-serif' }}
+            onMouseEnter={e => { e.currentTarget.style.background = `${event.color}25` }}
+            onMouseLeave={e => { e.currentTarget.style.background = `${event.color}15` }}
+          >
+            <Download size={18} color={event.color} /> {event.downloadLabel}
+          </a>
+        )}
 
         {/* Register button: unchanged */}
         <a
