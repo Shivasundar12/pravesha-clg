@@ -220,7 +220,7 @@ const nonTechnicalEvents: Event[] = [
     desc: 'A fusion of acting and music! Three rounds: guess songs from BGM, identify songs from images, and act out songs. No lip syncing in Round 3.',
     teamSize: '3 members (no solo)',
     duration: '3 Rounds',
-    venue: 'APJ 317 & 318',
+    venue: 'APJ BLOCK CONFERENCE HALL',
     rules: [
       'Teams must consist of exactly 3 members: solo participation is not allowed.',
       'Round 1: Guess the song from BGM (10-15 seconds given).',
