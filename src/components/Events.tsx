@@ -65,7 +65,7 @@ const technicalEvents: Event[] = [
     desc: 'Hands-on experience with cutting-edge tools and technologies guided by industry experts. All participants must complete registration before attending.',
     teamSize: 'Individual',
     duration: 'Full Session',
-    venue: 'APJ Conference Hall & Lab',
+    venue: 'VIBA Hall',
     rules: [
       'Registration Mandatory: all participants must complete the registration process before entering the workshop.',
       'Punctuality: participants should report on time. Late entry may not be allowed once the session begins.',
@@ -90,7 +90,7 @@ const technicalEvents: Event[] = [
     desc: 'Showcase your innovative ideas, technical skills, and problem-solving abilities through working models or functional prototypes to a panel of expert judges.',
     teamSize: 'Max 2 members',
     duration: '5 min + 2 min Q&A',
-    venue: 'Flemming Block Conference Hall',
+    venue: 'APJ Conference Hall',
     rules: [
       'Each team shall consist of a maximum of two members.',
       'Participants must bring their own laptops and any necessary hardware for project demonstration.',
