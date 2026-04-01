@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 const stats = [
   { icon: Trophy, value: '12', label: 'EVENTS', color: 'var(--neon-red)' },
   { icon: Award, value: 'A++', label: 'NAAC Accredited', color: 'var(--neon-blue)' },
-  { icon: Globe, value: '500+', label: 'Participants', color: 'var(--neon-purple)' },
   { icon: GraduationCap, value: '1 Day', label: 'Symposium', color: 'var(--neon-red)' },
 ];
 

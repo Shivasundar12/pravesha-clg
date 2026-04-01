@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 
 import pptxFormat from '../assets/DOC-20260327-WA0011..pptx';
+import docxFormat from '../assets/Single Column IEEE Format.doc';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,8 +25,7 @@ type Event = {
   teamSize: string;
   duration: string;
   venue: string;
-  downloadLink?: string;
-  downloadLabel?: string;
+  downloads?: { link: string; label: string; fileName: string }[];
 };
 
 const technicalEvents: Event[] = [
@@ -38,8 +38,10 @@ const technicalEvents: Event[] = [
     teamSize: 'Max 3 members',
     duration: '10:30 to 4:00',
     venue: 'Lecture Theatre, MGR Block',
-    downloadLink: pptxFormat,
-    downloadLabel: 'Download Presentation Format (PPTX)',
+    downloads: [
+      { link: docxFormat, label: 'Download IEEE Format (DOCX)', fileName: 'Single_Column_IEEE_Format.doc' },
+      { link: pptxFormat, label: 'Download Presentation Format (PPTX)', fileName: 'Paper_Presentation_Format.pptx' }
+    ],
     rules: [
       'Open to individual participants or teams (maximum 3 members).',
       'Topics must relate to Computer Science & Emerging Technologies (AI, Data Science, IoT, Cyber Security, etc.).',
@@ -446,18 +448,19 @@ const EventModal = ({ event, onClose }: { event: Event; onClose: () => void }) =
           </div>
         </div>
 
-        {/* Download Format button */}
-        {event.downloadLink && event.downloadLabel && (
+        {/* Download Format buttons */}
+        {event.downloads?.map((dl, i) => (
           <a
-            href={event.downloadLink}
-            download="Paper_Presentation_Format.pptx"
+            key={i}
+            href={dl.link}
+            download={dl.fileName}
             style={{ width: '100%', justifyContent: 'center', display: 'flex', boxSizing: 'border-box', whiteSpace: 'normal', textAlign: 'center', lineHeight: 1.4, background: `${event.color}15`, border: `1px solid ${event.color}50`, color: 'white', padding: '0.8rem', borderRadius: '8px', cursor: 'pointer', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', textDecoration: 'none', fontWeight: 600, transition: 'all 0.2s ease', fontFamily: 'Orbitron, sans-serif' }}
             onMouseEnter={e => { e.currentTarget.style.background = `${event.color}25` }}
             onMouseLeave={e => { e.currentTarget.style.background = `${event.color}15` }}
           >
-            <Download size={18} color={event.color} /> {event.downloadLabel}
+            <Download size={18} color={event.color} /> {dl.label}
           </a>
-        )}
+        ))}
 
         {/* Register button: unchanged */}
         <a
