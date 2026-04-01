@@ -88,7 +88,7 @@ const technicalEvents: Event[] = [
     icon: Lightbulb,
     color: '#00d4ff',
     desc: 'Showcase your innovative ideas, technical skills, and problem-solving abilities through working models or functional prototypes to a panel of expert judges.',
-    teamSize: 'Max 2 members',
+    teamSize: 'Max 2-4 members',
     duration: '5 min + 2 min Q&A',
     venue: 'APJ Conference Hall',
     rules: [

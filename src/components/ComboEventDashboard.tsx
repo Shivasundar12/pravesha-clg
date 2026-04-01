@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ExternalLink, Info, CheckCircle2, Zap } from 'lucide-react';
+import { ExternalLink, CheckCircle2, Zap } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +87,7 @@ const ComboEventDashboard: React.FC = () => {
               </div>
               
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-                Experience the best of both worlds! Select the <strong style={{ color: 'white' }}>Combo Ticket</strong> to get access to <strong style={{ color: 'white' }}>all events</strong> for a special package price.
+                Experience the best of both worlds! Select the <strong style={{ color: 'white' }}>Combo Ticket</strong> to get access to <strong style={{ color: 'white' }}>1 tech + 1 non tech events</strong> for a special package price.
               </p>
 
               {/* Pricing Cards */}
@@ -100,7 +100,7 @@ const ComboEventDashboard: React.FC = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.25rem', background: 'rgba(168,85,247,0.1)', border: '1px solid rgba(168,85,247,0.4)', borderRadius: '10px', boxShadow: '0 0 20px rgba(168,85,247,0.15)' }}>
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <span style={{ fontWeight: 600, letterSpacing: '0.5px', color: 'var(--neon-purple)' }}>Combo Event Fee</span>
-                    <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>(All Events)</span>
+                    <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>(1 tech + 1 non tech events)</span>
                   </div>
                   <span style={{ fontFamily: 'Orbitron', fontSize: '1.4rem', fontWeight: 900, color: 'white', textShadow: '0 0 10px rgba(168,85,247,0.8)' }}>₹150</span>
                 </div>
@@ -111,16 +111,6 @@ const ComboEventDashboard: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '2rem' }}>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div style={{ padding: '1.25rem', background: 'rgba(255,42,42,0.08)', border: '1px solid rgba(255,42,42,0.3)', borderRadius: '12px', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                  <Info size={24} color="var(--neon-red)" style={{ flexShrink: 0, marginTop: '2px' }} />
-                  <div>
-                    <h4 style={{ color: 'white', fontSize: '1.05rem', margin: '0 0 0.5rem 0', letterSpacing: '1px' }}>PAPER PRESENTATION (SPECIAL)</h4>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0, lineHeight: 1.5 }}>
-                      Accepted papers will be published with an <strong style={{ color: 'var(--neon-red)' }}>ISBN</strong> and has a discrete fee of <strong style={{ color: 'white' }}>₹500</strong>. It cannot be combined with the combo offer.
-                    </p>
-                  </div>
-                </div>
-
                 <div style={{ padding: '1.25rem', background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <CheckCircle2 size={24} color="var(--text-secondary)" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <div>
