@@ -37,7 +37,7 @@ const technicalEvents: Event[] = [
     desc: 'Present your research ideas and technical expertise in emerging technology domains. Selected papers get published with an ISBN number for academic recognition.',
     teamSize: 'Max 3 members',
     duration: '10:30 to 4:00',
-    venue: 'Lecture Theatre, MGR Block',
+    venue: 'Vib 401 & 402',
     downloads: [
       { link: docxFormat, label: 'Download IEEE Format (DOCX)', fileName: 'Single_Column_IEEE_Format.doc' },
       { link: pptxFormat, label: 'Download Presentation Format (PPTX)', fileName: 'Paper_Presentation_Format.pptx' }
@@ -67,7 +67,7 @@ const technicalEvents: Event[] = [
     desc: 'Hands-on experience with cutting-edge tools and technologies guided by industry experts. All participants must complete registration before attending.',
     teamSize: 'Individual',
     duration: 'Full Session',
-    venue: 'VIBA Hall',
+    venue: 'APJ Conference Hall and Lab',
     rules: [
       'Registration Mandatory: all participants must complete the registration process before entering the workshop.',
       'Punctuality: participants should report on time. Late entry may not be allowed once the session begins.',
@@ -92,7 +92,7 @@ const technicalEvents: Event[] = [
     desc: 'Showcase your innovative ideas, technical skills, and problem-solving abilities through working models or functional prototypes to a panel of expert judges.',
     teamSize: 'Max 2-4 members',
     duration: '5 min + 2 min Q&A',
-    venue: 'APJ Conference Hall',
+    venue: 'Lecture Theatre MGR & ENB 205',
     rules: [
       'Each team shall consist of a maximum of two members.',
       'Participants must bring their own laptops and any necessary hardware for project demonstration.',
@@ -120,7 +120,7 @@ const technicalEvents: Event[] = [
     desc: 'Write the shortest possible code to solve programming challenges. Individual participation across three rounds of increasing difficulty.',
     teamSize: 'Individual',
     duration: '3 Rounds',
-    venue: 'Steve Jobs Seminar Hall',
+    venue: 'APJ Lab 1 and 2',
     rules: [
       'Individual participation only: no teamwork allowed.',
       'Any programming language allowed.',
@@ -145,7 +145,7 @@ const technicalEvents: Event[] = [
     desc: 'Rapid-fire tech quiz in two rounds: a computer-based screening followed by a live buzzer stage round testing logic, trivia, and CS fundamentals.',
     teamSize: '2 members',
     duration: '2 Rounds',
-    venue: 'APJ 317',
+    venue: 'Flemming Block Conference Hall',
     rules: [
       'Each team must consist of exactly two members.',
       'Participants must bring their own laptops for the event.',
@@ -171,7 +171,7 @@ const technicalEvents: Event[] = [
     desc: 'Design a compelling brand identity from scratch: let your creativity speak through vectors and pixels in this timed design challenge.',
     teamSize: '1-2 members',
     duration: '90 minutes',
-    venue: 'VIBA 406',
+    venue: 'APJ 311',
     rules: [
       'Participation: Individual or team of up to 2 members.',
       'Design brief will be provided at the start of the event.',
@@ -198,7 +198,7 @@ const nonTechnicalEvents: Event[] = [
     desc: 'Showcase your talents in dance, music, or any performing art on the main stage. Disclaimer: There will be a fee of ₹200 for each team and solo participant.',
     teamSize: 'Max up to 8 members',
     duration: '5-8 min per team',
-    venue: 'VIBA Auditorium',
+    venue: 'APJ Conference Hall',
     rules: [
       'Participation: Individual or team of max up to 8 members. Disclaimer: A fee of ₹200 is required for each team and solo participant.',
       'Allowed Performance Categories: Dancing, Singing, Rap, Beatboxing, Stand-up Comedy, Instrumental Music(except drums), Magic Tricks, Mimicry, Mime, Any unique creative performance.',
@@ -222,7 +222,7 @@ const nonTechnicalEvents: Event[] = [
     desc: 'A fusion of acting and music! Three rounds: guess songs from BGM, identify songs from images, and act out songs. No lip syncing in Round 3.',
     teamSize: '3 members (no solo)',
     duration: '3 Rounds',
-    venue: 'APJ Conference',
+    venue: 'Flemming Block Conference Hall',
     rules: [
       'Teams must consist of exactly 3 members: solo participation is not allowed.',
       'Round 1: Guess the song from BGM (10-15 seconds given).',
@@ -248,7 +248,7 @@ const nonTechnicalEvents: Event[] = [
     desc: 'Create 3-5 original tech-themed memes in a timed challenge. Content must relate to coding, programmers life, bugs, AI, or tech college life.',
     teamSize: '2 members',
     duration: '2 Rounds',
-    venue: 'VIBA 401, 402',
+    venue: 'APJ 318',
     rules: [
       'Participation: Team of exactly 2 members.',
       'Each team can submit 3-5 memes within the given time.',
@@ -274,7 +274,7 @@ const nonTechnicalEvents: Event[] = [
     desc: 'Create an original poster on a spot-given theme in 45 minutes, then present it. Top 6 teams enter a Q&A final round testing concept understanding.',
     teamSize: '1-2 members',
     duration: '45 min + Q&A Round',
-    venue: 'Steve Jobs Seminar Hall',
+    venue: 'APJ 312',
     rules: [
       'Participation: Individual or team of up to 2 members.',
       'Theme will be given on the spot during the event.',
